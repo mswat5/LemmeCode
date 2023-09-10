@@ -8,10 +8,10 @@ const Testimonials = () => {
       <div className="card card-side bg-base-100 shadow-sm w-[80%] mx-auto">
   <figure><img src="https://picsum.photos/200/250?2" alt="Movie"/></figure>
   <div className="card-body">
-    <h2 className="card-title">New movie is released!</h2>
-    <p>Click the button to watch on Jetflix app.</p>
+    <h2 className="card-title">Banda 1</h2>
+    <p>Bande ka Review 1</p>
     <div className="card-actions justify-start ">
-      <button className="btn btn-primary">Watch</button>
+      <button className="btn btn-primary">change</button>
     </div>
   </div>
 </div>

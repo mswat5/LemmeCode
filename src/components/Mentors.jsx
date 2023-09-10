@@ -35,7 +35,7 @@ const Mentors = () => {
   return (
     <div className="overflow-x-auto">
        <div className="flex flex-col items-center mb-5">
-       <p className="uppercase">key persons</p>
+       <p className="uppercase">key&nbsp;persons</p>
         <span className="text-3xl">Meet our teachers</span>
        </div>
         <div className="flex flex-row overflow-x-scroll gap-4 items-center  w-[80%] lg:w-[60%] mx-auto ">
@@ -44,8 +44,8 @@ const Mentors = () => {
                     <div key={id} className="card bg-base-100 shadow-2xl ">
   <figure><img src={image} alt="Shoes" className="  rounded-3xl w-[90%] h-[90%] m-auto"/></figure>
   <div className="card-body">
-    <span className="card-title absolute top-40 left-8 text-white ">{title}</span>
-    {/* title wale ko pic ke title me dalna hai */}
+    <span className="card-title absolute top-36 left-8 text-white ">{title}</span>
+    {/* title wale ko pic me adustment ka puxna hai */}
     <p className="text-sm">{description}</p>
     <div className="card-actions justify-end">
       <button className="btn btn-primary scale-75">Contact</button>

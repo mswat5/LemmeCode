@@ -3,14 +3,14 @@ const Nav = () => {
 
   const MenuItems = () => {
     return ( <>
-      <li><a>Courses</a></li>
+      <li><a>lorem</a></li>
           <li>
-            <a>Parent</a>
+            <a>lorem</a>
           </li>
-          <li><a>Item 3</a></li>
-          <li><a>Courses</a></li>
-          <li><a>Courses</a></li>
-          <li><a>Courses</a></li> 
+          <li><a>lorem</a></li>
+          <li><a>lorem</a></li>
+          <li><a>lorem</a></li>
+          <li><a>lorem</a></li> 
           </>
     )
   }

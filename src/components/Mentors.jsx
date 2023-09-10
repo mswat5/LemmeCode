@@ -33,38 +33,28 @@ const Mentors = () => {
         }
       ]
   return (
-    <div className="overflow-x-hidden">
-        <p className="uppercase">key persons</p>
-        <div className="heading flex justify-between">
-            <span className="text-3xl">Meet our teachers</span>
-            <div className="btns">
-                <button>
-                    <svg width="46" height="46" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M30.1108 21L22.8898 28.2211L30.1108 35.4421" stroke="#E8E8F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="-0.5" y="0.5" width="55" height="55" rx="27.5" transform="matrix(-1 0 0 1 55 0)" stroke="#E8E8F6"/></svg>
-</button>
-                <button className="ml-4"><svg width="46" height="46" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="56" height="56" rx="28" fill="#524FD5"/>
-<path d="M25.8892 21L33.1102 28.2211L25.8892 35.4421" stroke="#EFF0F6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</button>
-            </div>
-        </div>
-        <div className="grid grid-cols-3 grid-rows-1 gap-4  ">
+    <div className="overflow-x-auto">
+       <div className="flex flex-col items-center mb-5">
+       <p className="uppercase">key persons</p>
+        <span className="text-3xl">Meet our teachers</span>
+       </div>
+        <div className="flex flex-row overflow-x-scroll gap-4 items-center  w-[80%] lg:w-[60%] mx-auto ">
             {Mentors.map(({title, description, image,id}) => {
                 return (
-                    <div key={id} className="card w-[1100px] bg-base-100 shadow-xl ">
-  <figure><img src={image} alt="Shoes" className="rounded-3xl object-fill"/></figure>
+                    <div key={id} className="card bg-base-100 shadow-2xl ">
+  <figure><img src={image} alt="Shoes" className="  rounded-3xl w-[90%] h-[90%] m-auto"/></figure>
   <div className="card-body">
-    <h2 className="card-title">{title}</h2>
+    <span className="card-title absolute top-40 left-8 text-white ">{title}</span>
+    {/* title wale ko pic ke title me dalna hai */}
     <p className="text-sm">{description}</p>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Contact</button>
+      <button className="btn btn-primary scale-75">Contact</button>
     </div>
   </div>
 </div>
                 )
             })}
+            <span className="rounded-xl bg-blue-700 text-white py-2 px-4 rounded00">Show&nbsp;More</span>
         </div>
     </div>
   )
